@@ -20,3 +20,9 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+
+.DS_Store
+# ipynb_checkpointsはgit管理下に入れない
+/.ipynb_checkpoints
+# 個別にwork配下にリポジトリを設置するためにgit管理下に入れない
+work
