@@ -33,8 +33,8 @@ RUN conda update -n base -c defaults conda -y \
 ARG GITHUB_USER
 ARG GITHUB_EMAIL
 RUN mkdir -p ~/.ssh \
-  && git config --global user.name "${NANAOOOO}"  \
-  && git config --global user.email ${shirono.nanao@gmail.com}
+  && git config --global user.name "${GITHUB_USER}"  \
+  && git config --global user.email ${GITHUB_EMAIL}
 COPY config /root/.ssh
 COPY init.sh /usr/bin
 
